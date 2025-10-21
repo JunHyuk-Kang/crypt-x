@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run dev)",
+      "Bash(if not exist \"c:\\Users\\Juny\\Desktop\\crypt_proj\\public\" mkdir \"c:\\Users\\Juny\\Desktop\\crypt_proj\\public\")",
+      "Bash(dir)",
+      "Bash(git init)",
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Crypt X cryptocurrency tax calculation service\n\n- Set up basic project structure with Vite\n- Implement multi-step wizard for exchange selection\n- Add file upload functionality for financial statements\n- Create UI for domestic, international, and DEX exchanges\n- Add Korean language interface with purple/pink gradient theme\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
