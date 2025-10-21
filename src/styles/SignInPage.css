@@ -1,0 +1,173 @@
+.signin-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/background_img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Header */
+.signin-header {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 100;
+}
+
+.header-btn {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s;
+}
+
+.header-btn:hover {
+  opacity: 0.7;
+}
+
+/* Main Content */
+.signin-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 100px 0 80px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.logo {
+  font-size: 130px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.logo-crypt {
+  background: linear-gradient(90deg, #5AA5F5 0%, #8B7AEE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-x {
+  background: linear-gradient(90deg, #C865E8 0%, #FF2BA0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 8px;
+}
+
+/* Sign In Button */
+.signin-button {
+  background: transparent;
+  border: 5px solid white;
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+  padding: 35px 200px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.signin-button:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.signin-button:active {
+  transform: scale(1.0);
+}
+
+/* Sign Up Link */
+.signup-link {
+  color: white;
+  font-size: 26px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin: 0;
+  flex-shrink: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.signup-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .logo {
+    font-size: 100px;
+  }
+
+  .signin-button {
+    font-size: 56px;
+    padding: 30px 120px;
+  }
+
+  .signup-link {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 70px;
+  }
+
+  .signin-button {
+    font-size: 40px;
+    padding: 25px 80px;
+  }
+
+  .signup-link {
+    font-size: 20px;
+  }
+
+  .signin-content {
+    padding: 80px 20px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 50px;
+  }
+
+  .signin-button {
+    font-size: 32px;
+    padding: 20px 60px;
+  }
+
+  .signup-link {
+    font-size: 18px;
+  }
+
+  .signin-content {
+    padding: 60px 20px 40px;
+  }
+}

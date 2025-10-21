@@ -1,0 +1,255 @@
+.results-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/background_img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-y: auto;
+  padding: 40px;
+}
+
+.results-header {
+  margin-bottom: 30px;
+}
+
+.results-header .logo {
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.results-header .logo-crypt {
+  background: linear-gradient(90deg, #5AA5F5 0%, #8B7AEE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.results-header .logo-x {
+  background: linear-gradient(90deg, #C865E8 0%, #FF2BA0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 8px;
+}
+
+.results-content {
+  width: 100%;
+  max-width: 900px;
+  z-index: 10;
+}
+
+.results-panel {
+  background: rgba(80, 60, 100, 0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.results-title {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.results-subtitle {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  opacity: 0.9;
+}
+
+.results-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.income-section,
+.tax-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.result-row.highlight {
+  background: rgba(255, 43, 160, 0.2);
+  border: 2px solid rgba(255, 43, 160, 0.4);
+}
+
+.result-row.final {
+  background: linear-gradient(135deg, rgba(255, 43, 160, 0.4) 0%, rgba(200, 30, 130, 0.4) 100%);
+  border: 2px solid #FF2BA0;
+}
+
+.result-label {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.result-value {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.result-row.final .result-value {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.results-footer {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  opacity: 0.85;
+}
+
+.version-badge {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 48px;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .results-header .logo {
+    font-size: 70px;
+  }
+
+  .results-title {
+    font-size: 32px;
+  }
+
+  .result-label {
+    font-size: 18px;
+  }
+
+  .result-value {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .results-page {
+    padding: 30px 20px;
+  }
+
+  .results-header .logo {
+    font-size: 60px;
+  }
+
+  .results-panel {
+    padding: 30px 25px;
+  }
+
+  .results-title {
+    font-size: 28px;
+  }
+
+  .results-subtitle {
+    font-size: 16px;
+  }
+
+  .result-label {
+    font-size: 16px;
+  }
+
+  .result-value {
+    font-size: 18px;
+  }
+
+  .result-row.final .result-value {
+    font-size: 22px;
+  }
+
+  .result-row {
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .results-page {
+    padding: 20px 15px;
+  }
+
+  .results-header .logo {
+    font-size: 45px;
+  }
+
+  .results-panel {
+    padding: 25px 20px;
+  }
+
+  .results-title {
+    font-size: 22px;
+  }
+
+  .results-subtitle {
+    font-size: 14px;
+  }
+
+  .result-label {
+    font-size: 14px;
+  }
+
+  .result-value {
+    font-size: 16px;
+  }
+
+  .result-row.final .result-value {
+    font-size: 18px;
+  }
+
+  .result-row {
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .result-value {
+    align-self: flex-end;
+  }
+
+  .results-footer {
+    font-size: 14px;
+  }
+}

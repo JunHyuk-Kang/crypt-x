@@ -1,0 +1,157 @@
+.file-upload-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/background_img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.file-upload-header {
+  margin-bottom: 60px;
+}
+
+.file-upload-header .logo {
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.file-upload-header .logo-crypt {
+  background: linear-gradient(90deg, #5AA5F5 0%, #8B7AEE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.file-upload-header .logo-x {
+  background: linear-gradient(90deg, #C865E8 0%, #FF2BA0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 8px;
+}
+
+.file-upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  z-index: 10;
+}
+
+.upload-title {
+  color: white;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.upload-box {
+  width: 520px;
+  height: 200px;
+  border: 3px solid #FF2BA0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgba(255, 43, 160, 0.05);
+}
+
+.upload-box:hover {
+  background: rgba(255, 43, 160, 0.15);
+  transform: scale(1.02);
+}
+
+.plus-icon {
+  color: white;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.version-badge {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 48px;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .file-upload-header .logo {
+    font-size: 80px;
+  }
+
+  .upload-title {
+    font-size: 36px;
+  }
+
+  .upload-box {
+    width: 450px;
+    height: 180px;
+  }
+
+  .plus-icon {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .file-upload-header .logo {
+    font-size: 60px;
+  }
+
+  .upload-title {
+    font-size: 28px;
+  }
+
+  .upload-box {
+    width: 380px;
+    height: 150px;
+  }
+
+  .plus-icon {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .file-upload-header .logo {
+    font-size: 45px;
+  }
+
+  .upload-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .upload-box {
+    width: 300px;
+    height: 130px;
+  }
+
+  .plus-icon {
+    font-size: 50px;
+  }
+
+  .file-upload-page {
+    padding: 30px 20px;
+  }
+}

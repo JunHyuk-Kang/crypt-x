@@ -1,0 +1,228 @@
+.service-selection-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/background_img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.service-header {
+  margin-bottom: 60px;
+}
+
+.service-header .logo {
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.service-header .logo-crypt {
+  background: linear-gradient(90deg, #5AA5F5 0%, #8B7AEE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.service-header .logo-x {
+  background: linear-gradient(90deg, #C865E8 0%, #FF2BA0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 8px;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  z-index: 10;
+}
+
+.service-title {
+  color: white;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.service-options {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service-option {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.checkbox {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #5AA5F5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+.service-option.selected .checkbox {
+  border-color: #FF2BA0;
+  background: rgba(255, 43, 160, 0.2);
+}
+
+.checkbox-inner {
+  width: 24px;
+  height: 24px;
+  background: #FF2BA0;
+  border-radius: 2px;
+}
+
+.option-text {
+  color: white;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  user-select: none;
+}
+
+.next-button {
+  background: transparent;
+  border: 4px solid white;
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 18px 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  min-width: 320px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.next-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.next-button:active {
+  transform: scale(1.0);
+}
+
+.version-badge {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 48px;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .service-header .logo {
+    font-size: 80px;
+  }
+
+  .service-title {
+    font-size: 36px;
+  }
+
+  .option-text {
+    font-size: 40px;
+  }
+
+  .next-button {
+    font-size: 32px;
+    padding: 16px 80px;
+  }
+
+  .version-badge {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-header .logo {
+    font-size: 60px;
+  }
+
+  .service-title {
+    font-size: 28px;
+  }
+
+  .option-text {
+    font-size: 32px;
+  }
+
+  .checkbox {
+    width: 32px;
+    height: 32px;
+  }
+
+  .checkbox-inner {
+    width: 20px;
+    height: 20px;
+  }
+
+  .next-button {
+    font-size: 28px;
+    padding: 14px 60px;
+  }
+
+  .service-content {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-header .logo {
+    font-size: 45px;
+  }
+
+  .service-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .option-text {
+    font-size: 26px;
+  }
+
+  .checkbox {
+    width: 28px;
+    height: 28px;
+  }
+
+  .checkbox-inner {
+    width: 16px;
+    height: 16px;
+  }
+
+  .next-button {
+    font-size: 24px;
+    padding: 12px 50px;
+    min-width: 200px;
+  }
+}
